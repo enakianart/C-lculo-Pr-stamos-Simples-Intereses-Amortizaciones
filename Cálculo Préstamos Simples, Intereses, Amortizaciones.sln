@@ -5,6 +5,10 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cálculo Préstamos Simples, Intereses, Amortizaciones", "Cálculo Préstamos Simples, Intereses, Amortizaciones.csproj", "{5FE87896-C65C-4FC1-BFC8-906D50610C96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "..\AccesoDatos\AccesoDatos.csproj", "{D7119CDD-7155-4A66-9260-5A218E76F92F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaNegocio", "..\LogicaNegocio\LogicaNegocio.csproj", "{5D86F6D7-E569-422F-B8B3-BFD67230A7F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5FE87896-C65C-4FC1-BFC8-906D50610C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FE87896-C65C-4FC1-BFC8-906D50610C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FE87896-C65C-4FC1-BFC8-906D50610C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7119CDD-7155-4A66-9260-5A218E76F92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7119CDD-7155-4A66-9260-5A218E76F92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7119CDD-7155-4A66-9260-5A218E76F92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7119CDD-7155-4A66-9260-5A218E76F92F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D86F6D7-E569-422F-B8B3-BFD67230A7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D86F6D7-E569-422F-B8B3-BFD67230A7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D86F6D7-E569-422F-B8B3-BFD67230A7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D86F6D7-E569-422F-B8B3-BFD67230A7F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
