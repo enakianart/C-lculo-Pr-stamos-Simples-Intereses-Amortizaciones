@@ -16,5 +16,10 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
