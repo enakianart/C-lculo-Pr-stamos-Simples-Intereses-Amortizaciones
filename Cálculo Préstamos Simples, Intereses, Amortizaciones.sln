@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cálculo Préstamos Simples, Intereses, Amortizaciones", "Cálculo Préstamos Simples, Intereses, Amortizaciones.csproj", "{5FE87896-C65C-4FC1-BFC8-906D50610C96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.AccesoDatos", "1.AccesoDatos", "{02663AEF-24AB-4CB5-9D36-119727C6F428}"
+	ProjectSection(SolutionItems) = preProject
+		Conexion.cs = Conexion.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.LogicaNegocio", "2.LogicaNegocio", "{1D23E312-27D6-44FE-B15C-D03EC9901C79}"
 EndProject
@@ -20,6 +23,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Entidad", "..\3.Entidad\3.Entidad.csproj", "{E0A7B0E4-D723-4493-BC27-5F4B88B5928D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Presentacion", "..\4.Presentacion\4.Presentacion.csproj", "{924D1551-C64B-42F0-AC75-8B307F25710B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "df", "df", "{B9086081-582A-4C20-984C-B1250AE757CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
