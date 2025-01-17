@@ -13,6 +13,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.LogicaNegocio", "2.LogicaNegocio", "{1D23E312-27D6-44FE-B15C-D03EC9901C79}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Entidad", "3.Entidad", "{C2FE9C28-EA9C-4BD7-A64D-446CF8C89633}"
+	ProjectSection(SolutionItems) = preProject
+		EntidadesClase.cs = EntidadesClase.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Presentacion", "4.Presentacion", "{6DFBC9D8-9C4F-4D11-A182-8913A2129E10}"
 EndProject
