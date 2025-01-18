@@ -9,7 +9,12 @@ public class Class1
     {
         public int ClienteId { get; set; }
         public string Nombre { get; set; }
-        public string Emmail { get; set; }
+        public string Correo { get; set; }
+        public string Telefono { get; set; }
+        public string Direccion { get; set; }
+        public string Sueldo { get; set; }
+        public string Garantia { get; set; }
+        public string Estado { get; set; }
 
         public ICollection<Prestamo> Prestamos { get; set; }
     }
