@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class Class1
+public class Entidades
 {
-	public Class1()
+	public Entidades()
 	{
 
         public class Clientes
@@ -16,18 +16,38 @@ public class Class1
         public string Garantia { get; set; }
         public string Estado { get; set; }
 
-        public ICollection<Prestamo> Prestamos { get; set; }
     }
 
-    public class Prestamo
+    public class Prestamos
     {
-        public int Id { get; set; }
-        public Cliente Cliente { get; set; }
+        public int PrestamosId { get; set; }
         public int ClienteId { get; set; }
-        // ... otras propiedades
-        public ICollection<Pago> Pagos { get; set; }
+        public int Monto { get; set; }
+        public int PlazoMeses { get; set; }
+        public int TasaIntereses { get; set; }
+        
     }
-    // ... otras clases de entidad
 
+    public class Pagos
+    {
+        public int PagosId { get; set; }
+        public int ClienteId { get; set; }
+        public int PrestamosId { get; set; }
+        public int FechaPago { get; set; }
+        public int MontoAnterior { get; set; }
+        public int InteresPagado { get; set; }
+        public int MontoPagado { get; set; }
+        public int NuevoMonto { get; set; }
+
+    }
+
+    public class Moras
+    {
+        public int MorasId { get; set; }
+        public int PrestamosId { get; set; }
+        public int FechaMora { get; set; }
+        public int MontoMora { get; set; }
+
+    }
 }
 }
