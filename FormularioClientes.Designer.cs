@@ -33,6 +33,7 @@
             this.GestionarClienteBTN = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.VolverBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -91,12 +92,24 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Clientes";
             // 
+            // VolverBTN
+            // 
+            this.VolverBTN.BackColor = System.Drawing.Color.White;
+            this.VolverBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VolverBTN.Location = new System.Drawing.Point(835, 260);
+            this.VolverBTN.Name = "VolverBTN";
+            this.VolverBTN.Size = new System.Drawing.Size(124, 50);
+            this.VolverBTN.TabIndex = 6;
+            this.VolverBTN.Text = "Volver";
+            this.VolverBTN.UseVisualStyleBackColor = false;
+            // 
             // FormularioClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(971, 450);
+            this.Controls.Add(this.VolverBTN);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
@@ -116,5 +129,6 @@
         private System.Windows.Forms.Button GestionarClienteBTN;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button VolverBTN;
     }
 }
