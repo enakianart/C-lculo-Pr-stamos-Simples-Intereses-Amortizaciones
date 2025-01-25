@@ -28,26 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ClienteBTN = new System.Windows.Forms.Button();
             this.PrestamosBTN = new System.Windows.Forms.Button();
             this.ReportesBTN = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PagosBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
-            this.pictureBox1.Location = new System.Drawing.Point(410, 127);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 216);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -76,7 +67,7 @@
             // 
             this.PrestamosBTN.BackColor = System.Drawing.Color.White;
             this.PrestamosBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrestamosBTN.Location = new System.Drawing.Point(18, 183);
+            this.PrestamosBTN.Location = new System.Drawing.Point(18, 146);
             this.PrestamosBTN.Name = "PrestamosBTN";
             this.PrestamosBTN.Size = new System.Drawing.Size(216, 54);
             this.PrestamosBTN.TabIndex = 5;
@@ -109,6 +100,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Turquoise;
+            this.panel1.Controls.Add(this.PagosBTN);
             this.panel1.Controls.Add(this.ClienteBTN);
             this.panel1.Controls.Add(this.PrestamosBTN);
             this.panel1.Controls.Add(this.ReportesBTN);
@@ -116,6 +108,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(253, 475);
             this.panel1.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
+            this.pictureBox1.Location = new System.Drawing.Point(410, 127);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 216);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // PagosBTN
+            // 
+            this.PagosBTN.BackColor = System.Drawing.Color.White;
+            this.PagosBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PagosBTN.Location = new System.Drawing.Point(18, 239);
+            this.PagosBTN.Name = "PagosBTN";
+            this.PagosBTN.Size = new System.Drawing.Size(216, 54);
+            this.PagosBTN.TabIndex = 7;
+            this.PagosBTN.Text = "Pagos";
+            this.PagosBTN.UseVisualStyleBackColor = false;
             // 
             // FormLogin
             // 
@@ -129,8 +142,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormLogin";
             this.Text = "FormLogin";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,5 +158,6 @@
         private System.Windows.Forms.Button ReportesBTN;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button PagosBTN;
     }
 }
