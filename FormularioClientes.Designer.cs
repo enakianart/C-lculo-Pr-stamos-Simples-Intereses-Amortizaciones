@@ -49,6 +49,7 @@
             this.ConsultarClienteBTN.TabIndex = 4;
             this.ConsultarClienteBTN.Text = "Consultar cliente";
             this.ConsultarClienteBTN.UseVisualStyleBackColor = false;
+            this.ConsultarClienteBTN.Click += new System.EventHandler(this.ConsultarClienteBTN_Click);
             // 
             // panel1
             // 
