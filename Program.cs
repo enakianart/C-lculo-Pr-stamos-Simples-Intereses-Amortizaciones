@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
@@ -16,7 +13,7 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormLogin());
         }
     }
 }
