@@ -32,7 +32,7 @@
             this.VolverBTN = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.BuscarBTN = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BuscarTXT = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -84,12 +84,12 @@
             this.BuscarBTN.Text = "Buscar";
             this.BuscarBTN.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // BuscarTXT
             // 
-            this.textBox1.Location = new System.Drawing.Point(410, 126);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 26);
-            this.textBox1.TabIndex = 24;
+            this.BuscarTXT.Location = new System.Drawing.Point(410, 126);
+            this.BuscarTXT.Name = "BuscarTXT";
+            this.BuscarTXT.Size = new System.Drawing.Size(265, 26);
+            this.BuscarTXT.TabIndex = 24;
             // 
             // dataGridView1
             // 
@@ -131,7 +131,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BuscarBTN);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BuscarTXT);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -151,7 +151,7 @@
         private System.Windows.Forms.Button VolverBTN;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BuscarBTN;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox BuscarTXT;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

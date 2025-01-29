@@ -5,6 +5,7 @@ using System.Net;
 public class Class1
 {
 	public void conectar()
+         InitializeComponent();
 	{
         try
         {

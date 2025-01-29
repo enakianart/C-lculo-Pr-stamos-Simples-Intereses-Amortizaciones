@@ -31,14 +31,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.VolverBTN = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Buscartxt = new System.Windows.Forms.TextBox();
             this.BuscarBTN = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,16 +73,6 @@
             this.VolverBTN.UseVisualStyleBackColor = false;
             this.VolverBTN.Click += new System.EventHandler(this.VolverBTN_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
-            this.pictureBox1.Location = new System.Drawing.Point(999, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 206);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -93,12 +83,12 @@
             this.dataGridView1.Size = new System.Drawing.Size(777, 311);
             this.dataGridView1.TabIndex = 16;
             // 
-            // textBox1
+            // Buscartxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(422, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 26);
-            this.textBox1.TabIndex = 17;
+            this.Buscartxt.Location = new System.Drawing.Point(422, 117);
+            this.Buscartxt.Name = "Buscartxt";
+            this.Buscartxt.Size = new System.Drawing.Size(265, 26);
+            this.Buscartxt.TabIndex = 17;
             // 
             // BuscarBTN
             // 
@@ -110,6 +100,7 @@
             this.BuscarBTN.TabIndex = 13;
             this.BuscarBTN.Text = "Buscar";
             this.BuscarBTN.UseVisualStyleBackColor = false;
+            this.BuscarBTN.Click += new System.EventHandler(this.BuscarBTN_Click);
             // 
             // label2
             // 
@@ -123,6 +114,16 @@
             this.label2.Text = "El cliente puede modificar su nombre,\r\ncorreo, teléfono y/o dirección.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
+            this.pictureBox1.Location = new System.Drawing.Point(999, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(247, 206);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -131,7 +132,7 @@
             this.ClientSize = new System.Drawing.Size(1258, 560);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BuscarBTN);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Buscartxt);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -139,8 +140,8 @@
             this.Name = "FormConsultarCliente";
             this.Text = "FormConsultarCliente";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,7 +154,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button VolverBTN;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Buscartxt;
         private System.Windows.Forms.Button BuscarBTN;
         private System.Windows.Forms.Label label2;
     }
