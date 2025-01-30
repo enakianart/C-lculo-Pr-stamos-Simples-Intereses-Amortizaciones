@@ -17,6 +17,7 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             InitializeComponent();
         }
 
+<<<<<<< HEAD:Form1.cs
         private void ConsultarClienteBTN_Click(object sender, EventArgs e)
         {
             FormConsultarCliente formConsultarCliente = new FormConsultarCliente();
@@ -31,5 +32,11 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             formLogin.Show();
             this.Close();
         }
+=======
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5:FormClientes.cs
     }
 }

@@ -24,9 +24,13 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
 
         private void VolverBTN_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FormularioClientes formularioClientes = new FormularioClientes();
             formularioClientes.Show();
             this.Close();
+=======
+
+>>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5
         }
 
         private void BuscarBTN_Click(object sender, EventArgs e)
@@ -43,6 +47,7 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
                 adaptador.Fill(tablaclientes);
                 dataGridView1.DataSource = tablaclientes;
 
+<<<<<<< HEAD
 
                 dataGridView1.Columns["ClientesId"].ReadOnly = true;
                 dataGridView1.Columns["Nombre"].ReadOnly = false; 
@@ -60,3 +65,11 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
     }
 
     
+=======
+               
+
+            }
+        }
+    }
+}
+>>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5
