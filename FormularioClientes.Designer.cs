@@ -2,22 +2,22 @@
 {
     partial class FormularioClientes
     {
-<<<<<<< HEAD
+//<<<<<<< HEAD
         
         private System.ComponentModel.IContainer components = null;
 
         
-=======
+//=======
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        //private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
->>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5
+//>>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -110,10 +110,10 @@
             this.VolverBTN.TabIndex = 6;
             this.VolverBTN.Text = "Volver";
             this.VolverBTN.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
-            this.VolverBTN.Click += new System.EventHandler(this.VolverBTN_Click);
-=======
->>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5
+//<<<<<<< HEAD
+//            this.VolverBTN.Click += new System.EventHandler(this.VolverBTN_Click);
+//=======
+//>>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5
             // 
             // FormularioClientes
             // 
