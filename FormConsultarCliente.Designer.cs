@@ -36,6 +36,7 @@
             this.BuscarBTN = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ActualizarBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,12 +125,25 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // ActualizarBTN
+            // 
+            this.ActualizarBTN.BackColor = System.Drawing.Color.White;
+            this.ActualizarBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ActualizarBTN.Location = new System.Drawing.Point(848, 117);
+            this.ActualizarBTN.Name = "ActualizarBTN";
+            this.ActualizarBTN.Size = new System.Drawing.Size(124, 35);
+            this.ActualizarBTN.TabIndex = 18;
+            this.ActualizarBTN.Text = "Actualizar";
+            this.ActualizarBTN.UseVisualStyleBackColor = false;
+            this.ActualizarBTN.Click += new System.EventHandler(this.ActualizarBTN_Click);
+            // 
             // FormConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(1258, 560);
+            this.Controls.Add(this.ActualizarBTN);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BuscarBTN);
             this.Controls.Add(this.Buscartxt);
@@ -157,5 +171,6 @@
         private System.Windows.Forms.TextBox Buscartxt;
         private System.Windows.Forms.Button BuscarBTN;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button ActualizarBTN;
     }
 }
