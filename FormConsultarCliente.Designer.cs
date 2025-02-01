@@ -52,6 +52,7 @@
             this.label1.Size = new System.Drawing.Size(487, 70);
             this.label1.TabIndex = 15;
             this.label1.Text = "Consultar Cliente";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -61,6 +62,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(163, 536);
             this.panel1.TabIndex = 13;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // VolverBTN
             // 
@@ -81,21 +83,24 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(777, 311);
+            this.dataGridView1.Size = new System.Drawing.Size(801, 311);
             this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Buscartxt
             // 
-            this.Buscartxt.Location = new System.Drawing.Point(422, 117);
+            this.Buscartxt.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscartxt.Location = new System.Drawing.Point(488, 117);
             this.Buscartxt.Name = "Buscartxt";
-            this.Buscartxt.Size = new System.Drawing.Size(265, 26);
+            this.Buscartxt.Size = new System.Drawing.Size(274, 28);
             this.Buscartxt.TabIndex = 17;
+            this.Buscartxt.TextChanged += new System.EventHandler(this.Buscartxt_TextChanged);
             // 
             // BuscarBTN
             // 
             this.BuscarBTN.BackColor = System.Drawing.Color.White;
             this.BuscarBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuscarBTN.Location = new System.Drawing.Point(704, 102);
+            this.BuscarBTN.Location = new System.Drawing.Point(358, 102);
             this.BuscarBTN.Name = "BuscarBTN";
             this.BuscarBTN.Size = new System.Drawing.Size(124, 50);
             this.BuscarBTN.TabIndex = 13;
@@ -118,20 +123,21 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
-            this.pictureBox1.Location = new System.Drawing.Point(999, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1014, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(247, 206);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ActualizarBTN
             // 
             this.ActualizarBTN.BackColor = System.Drawing.Color.White;
             this.ActualizarBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ActualizarBTN.Location = new System.Drawing.Point(848, 117);
+            this.ActualizarBTN.Location = new System.Drawing.Point(768, 102);
             this.ActualizarBTN.Name = "ActualizarBTN";
-            this.ActualizarBTN.Size = new System.Drawing.Size(124, 35);
+            this.ActualizarBTN.Size = new System.Drawing.Size(155, 46);
             this.ActualizarBTN.TabIndex = 18;
             this.ActualizarBTN.Text = "Actualizar";
             this.ActualizarBTN.UseVisualStyleBackColor = false;
@@ -153,6 +159,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormConsultarCliente";
             this.Text = "FormConsultarCliente";
+            this.Load += new System.EventHandler(this.FormConsultarCliente_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

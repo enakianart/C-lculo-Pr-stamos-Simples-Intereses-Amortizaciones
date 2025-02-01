@@ -38,9 +38,9 @@
             this.ConsultarClienteBTN = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GestionarClienteBTN = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.VolverBTN = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -78,16 +78,7 @@
             this.GestionarClienteBTN.TabIndex = 5;
             this.GestionarClienteBTN.Text = "Gestionar cliente";
             this.GestionarClienteBTN.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
-            this.pictureBox1.Location = new System.Drawing.Point(359, 82);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 216);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.GestionarClienteBTN.Click += new System.EventHandler(this.GestionarClienteBTN_Click);
             // 
             // label1
             // 
@@ -110,10 +101,16 @@
             this.VolverBTN.TabIndex = 6;
             this.VolverBTN.Text = "Volver";
             this.VolverBTN.UseVisualStyleBackColor = false;
-//<<<<<<< HEAD
-//            this.VolverBTN.Click += new System.EventHandler(this.VolverBTN_Click);
-//=======
-//>>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
+            this.pictureBox1.Location = new System.Drawing.Point(359, 82);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 216);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // FormularioClientes
             // 

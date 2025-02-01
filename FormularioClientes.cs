@@ -22,5 +22,11 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             FormConsultarCliente formConsultarCliente = new FormConsultarCliente();
             formConsultarCliente.Show();
         }
+
+        private void GestionarClienteBTN_Click(object sender, EventArgs e)
+        {
+            FormularioGestionarCliente formularioGestionarCliente = new FormularioGestionarCliente();
+            formularioGestionarCliente.Show();
+        }
     }
 }

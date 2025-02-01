@@ -116,6 +116,8 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             }
 
         }
+
+        
     }
 }
     
