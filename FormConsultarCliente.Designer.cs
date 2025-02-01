@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConsultarCliente));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.VolverBTN = new System.Windows.Forms.Button();
@@ -35,8 +36,8 @@
             this.Buscartxt = new System.Windows.Forms.TextBox();
             this.BuscarBTN = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ActualizarBTN = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,7 +53,6 @@
             this.label1.Size = new System.Drawing.Size(487, 70);
             this.label1.TabIndex = 15;
             this.label1.Text = "Consultar Cliente";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -62,7 +62,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(163, 536);
             this.panel1.TabIndex = 13;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // VolverBTN
             // 
@@ -85,7 +84,6 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(801, 311);
             this.dataGridView1.TabIndex = 16;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Buscartxt
             // 
@@ -94,7 +92,6 @@
             this.Buscartxt.Name = "Buscartxt";
             this.Buscartxt.Size = new System.Drawing.Size(274, 28);
             this.Buscartxt.TabIndex = 17;
-            this.Buscartxt.TextChanged += new System.EventHandler(this.Buscartxt_TextChanged);
             // 
             // BuscarBTN
             // 
@@ -120,17 +117,6 @@
             this.label2.Text = "El cliente puede modificar su nombre,\r\ncorreo, teléfono y/o dirección.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
-            this.pictureBox1.Location = new System.Drawing.Point(1014, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 206);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // ActualizarBTN
             // 
             this.ActualizarBTN.BackColor = System.Drawing.Color.White;
@@ -142,6 +128,16 @@
             this.ActualizarBTN.Text = "Actualizar";
             this.ActualizarBTN.UseVisualStyleBackColor = false;
             this.ActualizarBTN.Click += new System.EventHandler(this.ActualizarBTN_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(929, -74);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(445, 341);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // FormConsultarCliente
             // 
@@ -155,11 +151,10 @@
             this.Controls.Add(this.Buscartxt);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormConsultarCliente";
             this.Text = "FormConsultarCliente";
-            this.Load += new System.EventHandler(this.FormConsultarCliente_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -171,7 +166,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button VolverBTN;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -179,5 +173,6 @@
         private System.Windows.Forms.Button BuscarBTN;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ActualizarBTN;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

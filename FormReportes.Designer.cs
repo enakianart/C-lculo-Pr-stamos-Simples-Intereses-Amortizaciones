@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReportes));
             this.Reporte1BTN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Reporte2BTN = new System.Windows.Forms.Button();
             this.Reporte3BTN = new System.Windows.Forms.Button();
             this.Reporte4BTN = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,16 +65,6 @@
             this.label1.Size = new System.Drawing.Size(542, 70);
             this.label1.TabIndex = 24;
             this.label1.Text = "Consultar Reportes";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
-            this.pictureBox1.Location = new System.Drawing.Point(903, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 206);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
             // 
             // Reporte2BTN
             // 
@@ -180,6 +171,16 @@
             this.label6.Text = "Muestra un listado de los clientes morosos.";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(818, -48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(445, 341);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -196,8 +197,8 @@
             this.Controls.Add(this.Reporte3BTN);
             this.Controls.Add(this.Reporte2BTN);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Reporte1BTN);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormReportes";
             this.Text = "FormReportes";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -210,7 +211,6 @@
 
         private System.Windows.Forms.Button Reporte1BTN;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Reporte2BTN;
         private System.Windows.Forms.Button Reporte3BTN;
         private System.Windows.Forms.Button Reporte4BTN;
@@ -220,5 +220,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

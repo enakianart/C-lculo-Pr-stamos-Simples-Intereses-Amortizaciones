@@ -35,6 +35,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioClientes));
             this.ConsultarClienteBTN = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GestionarClienteBTN = new System.Windows.Forms.Button();
@@ -101,15 +102,16 @@
             this.VolverBTN.TabIndex = 6;
             this.VolverBTN.Text = "Volver";
             this.VolverBTN.UseVisualStyleBackColor = false;
+            this.VolverBTN.Click += new System.EventHandler(this.VolverBTN_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
-            this.pictureBox1.Location = new System.Drawing.Point(359, 82);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(276, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 216);
+            this.pictureBox1.Size = new System.Drawing.Size(445, 341);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // FormularioClientes
@@ -120,8 +122,8 @@
             this.ClientSize = new System.Drawing.Size(971, 450);
             this.Controls.Add(this.VolverBTN);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormularioClientes";
             this.Text = "FormularioClientes1";
             this.panel1.ResumeLayout(false);
@@ -136,8 +138,8 @@
         private System.Windows.Forms.Button ConsultarClienteBTN;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button GestionarClienteBTN;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button VolverBTN;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

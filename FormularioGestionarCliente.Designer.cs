@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioGestionarCliente));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BuscarBTN = new System.Windows.Forms.Button();
             this.ActualizarBTN = new System.Windows.Forms.Button();
             this.Buscartxt = new System.Windows.Forms.TextBox();
@@ -38,9 +38,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.AgregarBTN = new System.Windows.Forms.Button();
             this.EliminarBTN = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -63,16 +64,6 @@
             this.label1.Size = new System.Drawing.Size(491, 70);
             this.label1.TabIndex = 18;
             this.label1.Text = "Gestionar Cliente";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties.Resources.Hiki_nivel_1_muy_feli;
-            this.pictureBox1.Location = new System.Drawing.Point(1014, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(247, 206);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
             // 
             // BuscarBTN
             // 
@@ -151,6 +142,16 @@
             this.EliminarBTN.UseVisualStyleBackColor = false;
             this.EliminarBTN.Click += new System.EventHandler(this.EliminarBTN_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(936, -56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(445, 341);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormularioGestionarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -163,14 +164,14 @@
             this.Controls.Add(this.ActualizarBTN);
             this.Controls.Add(this.Buscartxt);
             this.Controls.Add(this.BuscarBTN);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormularioGestionarCliente";
             this.Text = "FormularioGestionarCliente";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,7 +181,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BuscarBTN;
         private System.Windows.Forms.Button ActualizarBTN;
         private System.Windows.Forms.TextBox Buscartxt;
@@ -188,5 +188,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button AgregarBTN;
         private System.Windows.Forms.Button EliminarBTN;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
