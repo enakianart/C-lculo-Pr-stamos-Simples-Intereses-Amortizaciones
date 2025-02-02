@@ -97,6 +97,12 @@
     <Compile Include="FormularioGestionarCliente.Designer.cs">
       <DependentUpon>FormularioGestionarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioGestionarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioGestionarPago.Designer.cs">
+      <DependentUpon>FormularioGestionarPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioPagos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioGestionarCliente.resx">
       <DependentUpon>FormularioGestionarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioGestionarPago.resx">
+      <DependentUpon>FormularioGestionarPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioPagos.resx">
       <DependentUpon>FormularioPagos.cs</DependentUpon>
