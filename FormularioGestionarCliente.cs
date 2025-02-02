@@ -64,6 +64,18 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
                 {
                     dt = (DataTable)dataGridView1.DataSource;
 
+                    // Validar el estado del cliente antes de actualizar
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        string estado = row["Estado"].ToString();
+                        if (estado != "Activo" && estado != "Moroso" && estado != "Cancelado")
+                        {
+                            MessageBox.Show("El estado del cliente debe ser 'Activo', 'Moroso' o 'Cancelado'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return; // Detener la actualización si el estado es inválido
+                        }
+                    }
+
+
                     if (sda == null)
                     {
                         sda = new SqlDataAdapter("SELECT * FROM Clientes WHERE 1=0", conectar);
@@ -76,14 +88,14 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
 
                         scb = new SqlCommandBuilder(sda);
 
-                        sda.Update(dt); // Actualiza la base de datos
+                        sda.Update(dt);
 
                         connection.Close();
                     }
 
                     MessageBox.Show("Datos actualizados correctamente.");
 
-                    BuscarBTN_Click(sender, e); // Refresca el DataGridView
+                    BuscarBTN_Click(sender, e);
                 }
                 else
                 {
