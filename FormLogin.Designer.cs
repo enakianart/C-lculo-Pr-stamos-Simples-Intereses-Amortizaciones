@@ -77,6 +77,7 @@
             this.PrestamosBTN.TabIndex = 5;
             this.PrestamosBTN.Text = "Préstamos";
             this.PrestamosBTN.UseVisualStyleBackColor = false;
+            this.PrestamosBTN.Click += new System.EventHandler(this.PrestamosBTN_Click);
             // 
             // ReportesBTN
             // 
@@ -123,6 +124,7 @@
             this.PagosBTN.TabIndex = 7;
             this.PagosBTN.Text = "Pagos";
             this.PagosBTN.UseVisualStyleBackColor = false;
+            this.PagosBTN.Click += new System.EventHandler(this.PagosBTN_Click);
             // 
             // pictureBox1
             // 

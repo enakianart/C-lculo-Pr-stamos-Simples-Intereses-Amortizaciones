@@ -24,5 +24,16 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
 
         }
 
+        private void PagosBTN_Click(object sender, EventArgs e)
+        {
+            FormularioPagos formularioPagos = new FormularioPagos();
+            formularioPagos.Show();
+        }
+
+        private void PrestamosBTN_Click(object sender, EventArgs e)
+        {
+            FormularioPrestamos formularioPrestamos = new FormularioPrestamos();
+            formularioPrestamos.Show();
+        }
     }
 }

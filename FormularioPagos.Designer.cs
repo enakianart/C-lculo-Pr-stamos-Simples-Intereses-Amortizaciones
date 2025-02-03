@@ -92,6 +92,7 @@
             this.GestionarPagoBTN.TabIndex = 5;
             this.GestionarPagoBTN.Text = "Gestionar pago";
             this.GestionarPagoBTN.UseVisualStyleBackColor = false;
+            this.GestionarPagoBTN.Click += new System.EventHandler(this.GestionarPagoBTN_Click);
             // 
             // VolverBTN
             // 

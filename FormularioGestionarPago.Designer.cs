@@ -65,6 +65,7 @@
             this.AgregarBTN.TabIndex = 33;
             this.AgregarBTN.Text = "Agregar";
             this.AgregarBTN.UseVisualStyleBackColor = false;
+            this.AgregarBTN.Click += new System.EventHandler(this.AgregarBTN_Click);
             // 
             // panel1
             // 
@@ -97,6 +98,7 @@
             this.ActualizarBTN.TabIndex = 31;
             this.ActualizarBTN.Text = "Actualizar";
             this.ActualizarBTN.UseVisualStyleBackColor = false;
+            this.ActualizarBTN.Click += new System.EventHandler(this.ActualizarBTN_Click);
             // 
             // Buscartxt
             // 
@@ -116,6 +118,7 @@
             this.BuscarBTN.TabIndex = 29;
             this.BuscarBTN.Text = "Buscar";
             this.BuscarBTN.UseVisualStyleBackColor = false;
+            this.BuscarBTN.Click += new System.EventHandler(this.BuscarBTN_Click);
             // 
             // label1
             // 
