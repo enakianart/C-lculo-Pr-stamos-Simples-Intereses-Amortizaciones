@@ -71,6 +71,7 @@
             this.ConsultarPrestamoBTN.TabIndex = 4;
             this.ConsultarPrestamoBTN.Text = "Consultar préstamo";
             this.ConsultarPrestamoBTN.UseVisualStyleBackColor = false;
+            this.ConsultarPrestamoBTN.Click += new System.EventHandler(this.ConsultarPrestamoBTN_Click);
             // 
             // GestionarPrestamoBTN
             // 
@@ -82,7 +83,6 @@
             this.GestionarPrestamoBTN.TabIndex = 5;
             this.GestionarPrestamoBTN.Text = "Gestionar préstamo";
             this.GestionarPrestamoBTN.UseVisualStyleBackColor = false;
-//            this.GestionarPrestamoBTN.Click += new System.EventHandler(this.GestionarPagoBTN_Click);
             // 
             // VolverBTN
             // 

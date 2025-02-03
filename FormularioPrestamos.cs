@@ -24,5 +24,11 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             FormLogin formLogin = new FormLogin();
             formLogin.Show();
         }
+
+        private void ConsultarPrestamoBTN_Click(object sender, EventArgs e)
+        {
+            FormularioConsultarPrestamos formularioConsultarPrestamos = new FormularioConsultarPrestamos();
+            formularioConsultarPrestamos.Show();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
 {
-    partial class FormPrestamos
+    partial class FormularioConsultarPrestamos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrestamos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioConsultarPrestamos));
             this.panel1 = new System.Windows.Forms.Panel();
             this.VolverBTN = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();

@@ -73,11 +73,11 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPrestamos.cs">
+    <Compile Include="FormularioConsultarPrestamos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPrestamos.Designer.cs">
-      <DependentUpon>FormPrestamos.cs</DependentUpon>
+    <Compile Include="FormularioConsultarPrestamos.Designer.cs">
+      <DependentUpon>FormularioConsultarPrestamos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormReportes.cs">
       <SubType>Form</SubType>
@@ -102,6 +102,12 @@
     </Compile>
     <Compile Include="FormularioGestionarPago.Designer.cs">
       <DependentUpon>FormularioGestionarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioGestionarPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioGestionarPrestamo.Designer.cs">
+      <DependentUpon>FormularioGestionarPrestamo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormularioPagos.cs">
       <SubType>Form</SubType>
@@ -131,8 +137,8 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPrestamos.resx">
-      <DependentUpon>FormPrestamos.cs</DependentUpon>
+    <EmbeddedResource Include="FormularioConsultarPrestamos.resx">
+      <DependentUpon>FormularioConsultarPrestamos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReportes.resx">
       <DependentUpon>FormReportes.cs</DependentUpon>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioGestionarPago.resx">
       <DependentUpon>FormularioGestionarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioGestionarPrestamo.resx">
+      <DependentUpon>FormularioGestionarPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioPagos.resx">
       <DependentUpon>FormularioPagos.cs</DependentUpon>

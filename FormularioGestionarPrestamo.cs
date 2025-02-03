@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
 {
-    public partial class FormPrestamos : Form
+    public partial class FormularioGestionarPrestamo : Form
     {
-        public FormPrestamos()
+        public FormularioGestionarPrestamo()
         {
             InitializeComponent();
         }
