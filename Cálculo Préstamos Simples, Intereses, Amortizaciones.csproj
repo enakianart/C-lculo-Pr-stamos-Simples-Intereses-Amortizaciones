@@ -55,6 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="db_prestamosDataSet.cs">
+      <DependentUpon>db_prestamosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_prestamosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_prestamosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormConsultarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +105,7 @@
     <Compile Include="FormularioGestionarCliente.Designer.cs">
       <DependentUpon>FormularioGestionarCliente.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="FormularioGestionarPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +138,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_ENZOACER_SQLEXPRESSDataSet.xsd</DependentUpon>
     </Compile>
+=======
+    <Compile Include="Reportes\FormularioDataGridVC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormularioDataGridVC.Designer.cs">
+      <DependentUpon>FormularioDataGridVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte%282%29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte%282%29.xsd</DependentUpon>
+    </Compile>
+>>>>>>> Stashed changes
     <EmbeddedResource Include="FormConsultarCliente.resx">
       <DependentUpon>FormConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +194,27 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< Updated upstream
+=======
+    <EmbeddedResource Include="Reportes\Formulario para reporte.resx">
+      <DependentUpon>Formulario para reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormularioDataGridVC.resx">
+      <DependentUpon>FormularioDataGridVC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Reporte_Cliente.rdlc" />
+    <None Include="db_prestamosDataSet.xsc">
+      <DependentUpon>db_prestamosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_prestamosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_prestamosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_prestamosDataSet.xss">
+      <DependentUpon>db_prestamosDataSet.xsd</DependentUpon>
+    </None>
+>>>>>>> Stashed changes
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -182,6 +225,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< Updated upstream
     <None Include="_ENZOACER_SQLEXPRESSDataSet.xsc">
       <DependentUpon>_ENZOACER_SQLEXPRESSDataSet.xsd</DependentUpon>
     </None>
@@ -192,6 +236,18 @@
     </None>
     <None Include="_ENZOACER_SQLEXPRESSDataSet.xss">
       <DependentUpon>_ENZOACER_SQLEXPRESSDataSet.xsd</DependentUpon>
+=======
+    <None Include="Reportes\Reporte%282%29.xsc">
+      <DependentUpon>Reporte%282%29.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Reporte%282%29.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reporte%282%29.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Reporte%282%29.xss">
+      <DependentUpon>Reporte%282%29.xsd</DependentUpon>
+>>>>>>> Stashed changes
     </None>
   </ItemGroup>
   <ItemGroup>
