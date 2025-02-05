@@ -83,6 +83,7 @@
             this.GestionarPrestamoBTN.TabIndex = 5;
             this.GestionarPrestamoBTN.Text = "Gestionar préstamo";
             this.GestionarPrestamoBTN.UseVisualStyleBackColor = false;
+            this.GestionarPrestamoBTN.Click += new System.EventHandler(this.GestionarPrestamoBTN_Click);
             // 
             // VolverBTN
             // 

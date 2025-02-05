@@ -50,6 +50,8 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
                 dataGridView1.Columns["Sueldo"].ReadOnly = false;
                 dataGridView1.Columns["Garantia"].ReadOnly = false;
                 dataGridView1.Columns["Estado"].ReadOnly = false;
+                dataGridView1.Columns["CantidadMoras"].ReadOnly = false;
+
 
 
                 dataGridView1.AllowUserToDeleteRows = true;
@@ -127,7 +129,9 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
                     nuevaFila["Direccion"] = "Nueva Dirección";
                     nuevaFila["Sueldo"] = 0;
                     nuevaFila["Garantia"] = 0;
-                    nuevaFila["Estado"] = "Activo"; 
+                    nuevaFila["Estado"] = "Activo";
+                    nuevaFila["CantidadMoras"] = 0;
+
 
                     dt.Rows.Add(nuevaFila);
 

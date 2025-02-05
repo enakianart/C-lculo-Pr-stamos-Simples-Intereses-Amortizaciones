@@ -30,5 +30,13 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             FormularioConsultarPrestamos formularioConsultarPrestamos = new FormularioConsultarPrestamos();
             formularioConsultarPrestamos.Show();
         }
+
+        private void GestionarPrestamoBTN_Click(object sender, EventArgs e)
+        {
+            FormularioGestionarPrestamo formularioGestionarPrestamo = new FormularioGestionarPrestamo();
+            formularioGestionarPrestamo.Show();
+            this.Close();
+        }
     }
 }
+

@@ -66,6 +66,8 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
                 dataGridView1.Columns["Sueldo"].ReadOnly = true;
                 dataGridView1.Columns["Garantia"].ReadOnly = true;
                 dataGridView1.Columns["Estado"].ReadOnly = true;
+                dataGridView1.Columns["CantidadMoras"].ReadOnly = true;
+
 
 
                 dataGridView1.AllowUserToDeleteRows = false;
