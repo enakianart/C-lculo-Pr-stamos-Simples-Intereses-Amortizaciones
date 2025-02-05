@@ -33,7 +33,7 @@
             this.VolverBTN = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.BuscarBTN = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BuscarTXT = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,6 +61,7 @@
             this.VolverBTN.TabIndex = 12;
             this.VolverBTN.Text = "Volver";
             this.VolverBTN.UseVisualStyleBackColor = false;
+            this.VolverBTN.Click += new System.EventHandler(this.VolverBTN_Click);
             // 
             // label2
             // 
@@ -69,9 +70,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(381, 525);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(396, 25);
+            this.label2.Size = new System.Drawing.Size(445, 25);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Buscar el préstamo de un cliente según su ID\r\n";
+            this.label2.Text = "Buscar el préstamo de un cliente según su nombre\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // BuscarBTN
@@ -84,13 +85,14 @@
             this.BuscarBTN.TabIndex = 20;
             this.BuscarBTN.Text = "Buscar";
             this.BuscarBTN.UseVisualStyleBackColor = false;
+            this.BuscarBTN.Click += new System.EventHandler(this.BuscarBTN_Click);
             // 
-            // textBox1
+            // BuscarTXT
             // 
-            this.textBox1.Location = new System.Drawing.Point(386, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 26);
-            this.textBox1.TabIndex = 24;
+            this.BuscarTXT.Location = new System.Drawing.Point(386, 100);
+            this.BuscarTXT.Name = "BuscarTXT";
+            this.BuscarTXT.Size = new System.Drawing.Size(265, 26);
+            this.BuscarTXT.TabIndex = 24;
             // 
             // dataGridView1
             // 
@@ -123,7 +125,7 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
-            // FormPrestamos
+            // FormularioConsultarPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,11 +134,11 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BuscarBTN);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BuscarTXT);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "FormPrestamos";
+            this.Name = "FormularioConsultarPrestamos";
             this.Text = "FormPrestamos";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -152,7 +154,7 @@
         private System.Windows.Forms.Button VolverBTN;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BuscarBTN;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox BuscarTXT;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

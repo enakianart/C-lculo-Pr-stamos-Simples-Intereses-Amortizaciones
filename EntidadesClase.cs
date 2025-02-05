@@ -15,6 +15,7 @@ public class Entidades
         public string Sueldo { get; set; }
         public string Garantia { get; set; }
         public string Estado { get; set; }
+        public string CantidadMoras { get; set; }
 
     }
 
