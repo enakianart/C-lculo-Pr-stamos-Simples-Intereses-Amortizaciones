@@ -73,11 +73,11 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularioConsultarPrestamos.cs">
+    <Compile Include="FormularioConsultarPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormularioConsultarPrestamos.Designer.cs">
-      <DependentUpon>FormularioConsultarPrestamos.cs</DependentUpon>
+    <Compile Include="FormularioConsultarPrestamo.Designer.cs">
+      <DependentUpon>FormularioConsultarPrestamo.cs</DependentUpon>
     </Compile>
     <Compile Include="FormReportes.cs">
       <SubType>Form</SubType>
@@ -138,8 +138,8 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormularioConsultarPrestamos.resx">
-      <DependentUpon>FormularioConsultarPrestamos.cs</DependentUpon>
+    <EmbeddedResource Include="FormularioConsultarPrestamo.resx">
+      <DependentUpon>FormularioConsultarPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReportes.resx">
       <DependentUpon>FormReportes.cs</DependentUpon>

@@ -27,7 +27,7 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
 
         private void ConsultarPrestamoBTN_Click(object sender, EventArgs e)
         {
-            FormularioConsultarPrestamos formularioConsultarPrestamos = new FormularioConsultarPrestamos();
+            FormularioConsultarPrestamo formularioConsultarPrestamos = new FormularioConsultarPrestamo();
             formularioConsultarPrestamos.Show();
         }
 

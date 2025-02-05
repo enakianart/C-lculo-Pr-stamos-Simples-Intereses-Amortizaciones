@@ -183,9 +183,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(1052, 291);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 50);
+            this.label2.Size = new System.Drawing.Size(231, 50);
             this.label2.TabIndex = 46;
-            this.label2.Text = "Agregar préstamo según\r\n el nombre de un cliente";
+            this.label2.Text = "Agregar préstamo a un \r\ncliente según su nombre. ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FormularioGestionarPrestamo
