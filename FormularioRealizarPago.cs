@@ -92,6 +92,8 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
 
                     // Mostrar la cuota en el label correspondiente
                     CuotaLABEL.Text = cuota.ToString();
+                    InteresLABEL.Text = interesMensual.ToString();
+
 
                     // Obtener el monto anterior del préstamo
                     if (row["MontoAnterior"] != DBNull.Value)
@@ -124,7 +126,58 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
                 // ... (resto del código para configurar el DataGridView)
             }
         }
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataRow filaSeleccionada = ((DataRowView)dataGridView1.SelectedRows[0].DataBoundItem).Row;
+                ActualizarLabels(filaSeleccionada); // Llamar a ActualizarLabels al seleccionar una fila
+            }
+        }
 
+        private void ActualizarLabels(DataRow row)
+        {
+            int plazoMeses = Convert.ToInt32(row["PlazoMeses"]);
+            decimal montoPrestamo = Convert.ToDecimal(row["MontoPrestamo"]);
+            decimal tasaInteresMensual = Convert.ToDecimal(row["TasaInteres"]);
+
+            tasaInteresMensual = tasaInteresMensual / 100;
+
+            // Calcular la cuota mensual
+            decimal interesMensual = Math.Round(montoPrestamo * (tasaInteresMensual / plazoMeses));
+            decimal cuotaCapital = Math.Round((decimal)montoPrestamo / plazoMeses);
+            decimal cuota = interesMensual + cuotaCapital;
+
+            // Mostrar la cuota en el label correspondiente
+            CuotaLABEL.Text = cuota.ToString();
+            InteresLABEL.Text = interesMensual.ToString();
+
+
+            // Obtener el monto anterior del préstamo
+            if (row["MontoAnterior"] != DBNull.Value)
+            {
+                MontoAnteriorLABEL.Text = Convert.ToDecimal(row["MontoAnterior"]).ToString();
+                // Calcular el monto actual restando la cuota
+                MontoActualLABEL.Text = (Convert.ToDecimal(row["MontoAnterior"]) - cuota).ToString();
+            }
+            else
+            {
+                MontoAnteriorLABEL.Text = montoPrestamo.ToString(); // Mostrar el monto original si no hay pagos
+                MontoActualLABEL.Text = (montoPrestamo - cuota).ToString();
+            }
+
+            // Obtener y mostrar la fecha de pago
+            if (row["FechaPago"] != DBNull.Value)
+            {
+                DateTime fechaPago = Convert.ToDateTime(row["FechaPago"]);
+                FechaPagoLABEL.Text = fechaPago.AddDays(30).ToString("dd/MM/yyyy"); // Sumar 30 días
+            }
+            else
+            {
+                FechaPagoLABEL.Text = DateTime.Now.ToString("dd/MM/yyyy"); // Fecha actual si no hay pagos
+            }
+        
+    }
 
         private void PagarBTN_Click(object sender, EventArgs e)
         {
@@ -173,6 +226,28 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
                     comando.ExecuteNonQuery();
                 }
 
+                using (SqlConnection conexion = new SqlConnection(conectar))
+                {
+                    conexion.Open();
+                    string consulta = "INSERT INTO Pagos (PrestamosId, ClientesId, FechaPago, MontoAnterior, InteresPagado, MontoPagado, NuevoMonto) " +
+                                       "VALUES (@PrestamosId, @ClientesId, @FechaPago, @MontoAnterior, @InteresPagado, @MontoPagado, @NuevoMonto)";
+                    SqlCommand comando = new SqlCommand(consulta, conexion);
+                    comando.Parameters.AddWithValue("@PrestamosId", prestamosId);
+                    comando.Parameters.AddWithValue("@ClientesId", clientesId);
+                    comando.Parameters.AddWithValue("@FechaPago", fechaPago);
+                    comando.Parameters.AddWithValue("@MontoAnterior", montoAnterior);
+                    comando.Parameters.AddWithValue("@InteresPagado", interesMensual);
+                    comando.Parameters.AddWithValue("@MontoPagado", cuota);
+                    comando.Parameters.AddWithValue("@NuevoMonto", nuevoMonto);
+                    comando.ExecuteNonQuery();
+
+                    // Verificar si se ha completado el pago del préstamo
+                    if (nuevoMonto <= 0 || HaAlcanzadoPlazo(prestamosId, plazoMeses))
+                    {
+                        MessageBox.Show("El préstamo ha sido pagado en su totalidad.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Puedes realizar acciones adicionales aquí, como deshabilitar el botón de pagar o limpiar los campos.
+                    }
+                }
                 // Limpiar los labels y el DataGridView
                 MontoAnteriorLABEL.Text = "";
                 MontoActualLABEL.Text = "";
@@ -186,6 +261,79 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             {
                 MessageBox.Show("Debe seleccionar una fila para realizar el pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+        private bool HaAlcanzadoPlazo(int prestamosId, int plazoMeses)
+        {
+            using (SqlConnection conexion = new SqlConnection(conectar))
+            {
+                conexion.Open();
+                string consulta = "SELECT COUNT(*) FROM Pagos WHERE PrestamosId = @PrestamosId";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@PrestamosId", prestamosId);
+                int cantidadPagos = (int)comando.ExecuteScalar();
+                return cantidadPagos >= plazoMeses;
+            }
+        }
+
+
+        private void UltimoPagoBTN_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("No hay pagos para este cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Verificar si se ha seleccionado una fila
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Debe seleccionar el último pago realizado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Obtener la fila seleccionada
+            DataGridViewRow filaSeleccionada = dataGridView1.SelectedRows[0];
+
+            // Obtener los datos del último pago
+            int prestamosId = Convert.ToInt32(filaSeleccionada.Cells["PrestamosId"].Value);
+            int clientesId = Convert.ToInt32(filaSeleccionada.Cells["ClientesId"].Value);
+            decimal montoAnterior = Convert.ToDecimal(filaSeleccionada.Cells["NuevoMonto"].Value); // El nuevo monto es el anterior para el siguiente pago
+            DateTime fechaPago = Convert.ToDateTime(filaSeleccionada.Cells["FechaPago"].Value);
+
+            // Calcular la cuota (puedes obtenerla de la base de datos o calcularla si la tienes)
+            decimal cuota = ObtenerCuota(prestamosId); // Función para obtener la cuota
+
+            // Calcular el nuevo monto
+            decimal nuevoMonto = montoAnterior - cuota;
+
+            // Mostrar los datos en los labels
+            MontoAnteriorLABEL.Text = montoAnterior.ToString();
+            MontoActualLABEL.Text = nuevoMonto.ToString();
+            CuotaLABEL.Text = cuota.ToString();
+            FechaPagoLABEL.Text = fechaPago.AddDays(30).ToString("dd/MM/yyyy"); // Sumar 30 días a la fecha de pago anterior
+        }
+
+        // Función para obtener la cuota de la base de datos
+        private decimal ObtenerCuota(int prestamosId)
+        {
+            using (SqlConnection conexion = new SqlConnection(conectar))
+            {
+                conexion.Open();
+                // Corregir el nombre de la columna a "MontoPagado"
+                string consulta = "SELECT MontoPagado FROM Pagos WHERE PrestamosId = @PrestamosId";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@PrestamosId", prestamosId);
+                // Asegúrate de que ExecuteScalar() devuelva un valor decimal
+                return Convert.ToDecimal(comando.ExecuteScalar());
+            }
+        }
+
+        private void VolverBTN_Click(object sender, EventArgs e)
+        {
+            FormularioPagos formularioPagos = new FormularioPagos();
+            formularioPagos.Show();
+            this.Close();
         }
     }
 }
