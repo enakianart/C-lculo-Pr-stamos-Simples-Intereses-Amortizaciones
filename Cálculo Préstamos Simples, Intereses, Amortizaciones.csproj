@@ -61,11 +61,11 @@
     <Compile Include="FormConsultarCliente.Designer.cs">
       <DependentUpon>FormConsultarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormConsultarPagos.cs">
+    <Compile Include="FormularioRealizarPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConsultarPagos.Designer.cs">
-      <DependentUpon>FormConsultarPagos.cs</DependentUpon>
+    <Compile Include="FormularioRealizarPago.Designer.cs">
+      <DependentUpon>FormularioRealizarPago.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -132,8 +132,8 @@
     <EmbeddedResource Include="FormConsultarCliente.resx">
       <DependentUpon>FormConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormConsultarPagos.resx">
-      <DependentUpon>FormConsultarPagos.cs</DependentUpon>
+    <EmbeddedResource Include="FormularioRealizarPago.resx">
+      <DependentUpon>FormularioRealizarPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

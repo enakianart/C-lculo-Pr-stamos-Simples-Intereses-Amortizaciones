@@ -65,12 +65,13 @@
             this.ConsultarPagoBTN.BackColor = System.Drawing.Color.White;
             this.ConsultarPagoBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConsultarPagoBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ConsultarPagoBTN.Location = new System.Drawing.Point(50, 36);
+            this.ConsultarPagoBTN.Location = new System.Drawing.Point(24, 36);
             this.ConsultarPagoBTN.Name = "ConsultarPagoBTN";
-            this.ConsultarPagoBTN.Size = new System.Drawing.Size(320, 54);
+            this.ConsultarPagoBTN.Size = new System.Drawing.Size(408, 54);
             this.ConsultarPagoBTN.TabIndex = 4;
-            this.ConsultarPagoBTN.Text = "Consultar pago";
+            this.ConsultarPagoBTN.Text = "Consultar y realizar pagos";
             this.ConsultarPagoBTN.UseVisualStyleBackColor = false;
+            this.ConsultarPagoBTN.Click += new System.EventHandler(this.ConsultarPagoBTN_Click);
             // 
             // panel1
             // 
@@ -86,7 +87,7 @@
             // 
             this.GestionarPagoBTN.BackColor = System.Drawing.Color.White;
             this.GestionarPagoBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GestionarPagoBTN.Location = new System.Drawing.Point(538, 36);
+            this.GestionarPagoBTN.Location = new System.Drawing.Point(510, 36);
             this.GestionarPagoBTN.Name = "GestionarPagoBTN";
             this.GestionarPagoBTN.Size = new System.Drawing.Size(341, 54);
             this.GestionarPagoBTN.TabIndex = 5;

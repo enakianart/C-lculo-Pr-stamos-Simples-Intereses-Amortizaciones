@@ -28,5 +28,12 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             FormularioGestionarPago formularioGestionarPago = new FormularioGestionarPago();
             formularioGestionarPago.Show();
         }
+
+        private void ConsultarPagoBTN_Click(object sender, EventArgs e)
+        {
+            FormularioRealizarPago formularioConsultarPago = new FormularioRealizarPago();
+            formularioConsultarPago.Show();
+            this.Close();
+        }
     }
 }
