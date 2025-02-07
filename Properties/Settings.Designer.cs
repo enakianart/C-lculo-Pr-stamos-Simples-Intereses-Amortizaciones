@@ -33,5 +33,16 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones.Properties {
                 return ((string)(this["ENZOACER_SQLEXPRESSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-37K1NF5\\SQLEXPRESS;Initial Catalog=db_prestamos;Integrated Se" +
+            "curity=True;Encrypt=True;TrustServerCertificate=True")]
+        public string db_prestamosConnectionString {
+            get {
+                return ((string)(this["db_prestamosConnectionString"]));
+            }
+        }
     }
 }

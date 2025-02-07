@@ -3,9 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-<<<<<<< HEAD
-Global
-=======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cálculo Préstamos Simples, Intereses, Amortizaciones", "Cálculo Préstamos Simples, Intereses, Amortizaciones.csproj", "{5FE87896-C65C-4FC1-BFC8-906D50610C96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.AccesoDatos", "1.AccesoDatos", "{02663AEF-24AB-4CB5-9D36-119727C6F428}"
@@ -57,7 +54,6 @@ Global
 		{D9A34974-AD50-4279-BAFC-5F5DD1242C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A34974-AD50-4279-BAFC-5F5DD1242C77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
->>>>>>> 1263d0f81bb970c4d04ac7bc9849c1069c9da9c5
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

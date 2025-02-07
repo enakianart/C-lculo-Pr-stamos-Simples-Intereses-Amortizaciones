@@ -24,5 +24,10 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
 
         }
 
+        private void ReportesBTN_Click(object sender, EventArgs e)
+        {
+            FormReportes frmReportes = new FormReportes();
+            frmReportes.Show();
+        }
     }
 }

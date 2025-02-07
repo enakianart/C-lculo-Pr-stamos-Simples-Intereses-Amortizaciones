@@ -13,7 +13,7 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new Reportes.FormulariodelReportV());
         }
     }
 }
