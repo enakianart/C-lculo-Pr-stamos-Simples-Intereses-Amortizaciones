@@ -335,5 +335,61 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             formularioPagos.Show();
             this.Close();
         }
+
+        private void NoPagarBTN_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataRowView rowView = (DataRowView)dataGridView1.SelectedRows[0].DataBoundItem;
+                int prestamosId = Convert.ToInt32(rowView["PrestamosId"]);
+                int clientesId = Convert.ToInt32(rowView["ClientesId"]);
+                DateTime fechaPago = DateTime.Now;
+
+                // Verificar si los campos obligatorios están llenos
+                if (string.IsNullOrEmpty(InteresLABEL.Text) || string.IsNullOrEmpty(MontoAnteriorLABEL.Text) ||
+                    string.IsNullOrEmpty(MontoActualLABEL.Text) || string.IsNullOrEmpty(FechaPagoLABEL.Text))
+                {
+                    MessageBox.Show("Debe llenar todos los campos para registrar el no pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Insertar el no pago en la base de datos con MontoPagado como NULL
+                using (SqlConnection conexion = new SqlConnection(conectar))
+                {
+                    conexion.Open();
+                    string consulta = "INSERT INTO Pagos (PrestamosId, ClientesId, FechaPago, MontoAnterior, InteresPagado, MontoPagado, NuevoMonto) " +
+                                       "VALUES (@PrestamosId, @ClientesId, @FechaPago, @MontoAnterior, @InteresPagado, @MontoPagado, @NuevoMonto)";
+                    SqlCommand comando = new SqlCommand(consulta, conexion);
+                    comando.Parameters.AddWithValue("@PrestamosId", prestamosId);
+                    comando.Parameters.AddWithValue("@ClientesId", clientesId);
+                    comando.Parameters.AddWithValue("@FechaPago", fechaPago);
+                    comando.Parameters.AddWithValue("@MontoAnterior", Convert.ToDecimal(MontoAnteriorLABEL.Text));
+                    comando.Parameters.AddWithValue("@InteresPagado", Convert.ToDecimal(InteresLABEL.Text));
+                    comando.Parameters.AddWithValue("@MontoPagado", 0); // Insertar NULL para MontoPagado
+                    comando.Parameters.AddWithValue("@NuevoMonto", Convert.ToDecimal(MontoActualLABEL.Text));
+                    comando.ExecuteNonQuery();
+
+                    // Actualizar la cantidad de moras en la tabla Clientes
+                    string consultaMoras = "UPDATE Clientes SET CantidadMoras = CantidadMoras + 1 WHERE ClientesId = @ClientesId";
+                    SqlCommand comandoMoras = new SqlCommand(consultaMoras, conexion);
+                    comandoMoras.Parameters.AddWithValue("@ClientesId", clientesId);
+                    comandoMoras.ExecuteNonQuery();
+                }
+
+                // Limpiar los labels y el DataGridView
+                MontoAnteriorLABEL.Text = "";
+                MontoActualLABEL.Text = "";
+                CuotaLABEL.Text = "";
+                FechaPagoLABEL.Text = "";
+                dataGridView1.DataSource = null;
+
+                MessageBox.Show("No pago registrado con éxito.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una fila para registrar el no pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }

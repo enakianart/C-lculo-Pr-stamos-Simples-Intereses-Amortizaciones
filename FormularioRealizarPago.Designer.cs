@@ -50,6 +50,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.InteresLABEL = new System.Windows.Forms.Label();
             this.UltimoPagoBTN = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.NoPagarBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,7 +83,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(512, 608);
+            this.label2.Location = new System.Drawing.Point(492, 365);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(406, 25);
             this.label2.TabIndex = 19;
@@ -114,7 +116,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(960, 212);
+            this.dataGridView1.Size = new System.Drawing.Size(960, 188);
             this.dataGridView1.TabIndex = 23;
             // 
             // label1
@@ -155,7 +157,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(190, 275);
+            this.label4.Location = new System.Drawing.Point(190, 252);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(229, 38);
             this.label4.TabIndex = 26;
@@ -166,7 +168,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(485, 275);
+            this.label5.Location = new System.Drawing.Point(485, 252);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(205, 38);
             this.label5.TabIndex = 27;
@@ -177,7 +179,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1107, 275);
+            this.label6.Location = new System.Drawing.Point(1107, 252);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(183, 38);
             this.label6.TabIndex = 28;
@@ -188,7 +190,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(768, 275);
+            this.label7.Location = new System.Drawing.Point(768, 252);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 38);
             this.label7.TabIndex = 29;
@@ -199,7 +201,7 @@
             this.MontoAnteriorLABEL.AutoSize = true;
             this.MontoAnteriorLABEL.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MontoAnteriorLABEL.ForeColor = System.Drawing.Color.White;
-            this.MontoAnteriorLABEL.Location = new System.Drawing.Point(279, 325);
+            this.MontoAnteriorLABEL.Location = new System.Drawing.Point(279, 302);
             this.MontoAnteriorLABEL.Name = "MontoAnteriorLABEL";
             this.MontoAnteriorLABEL.Size = new System.Drawing.Size(53, 38);
             this.MontoAnteriorLABEL.TabIndex = 30;
@@ -210,7 +212,7 @@
             this.MontoActualLABEL.AutoSize = true;
             this.MontoActualLABEL.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MontoActualLABEL.ForeColor = System.Drawing.Color.White;
-            this.MontoActualLABEL.Location = new System.Drawing.Point(556, 325);
+            this.MontoActualLABEL.Location = new System.Drawing.Point(556, 302);
             this.MontoActualLABEL.Name = "MontoActualLABEL";
             this.MontoActualLABEL.Size = new System.Drawing.Size(53, 38);
             this.MontoActualLABEL.TabIndex = 31;
@@ -221,7 +223,7 @@
             this.CuotaLABEL.AutoSize = true;
             this.CuotaLABEL.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CuotaLABEL.ForeColor = System.Drawing.Color.White;
-            this.CuotaLABEL.Location = new System.Drawing.Point(792, 325);
+            this.CuotaLABEL.Location = new System.Drawing.Point(792, 302);
             this.CuotaLABEL.Name = "CuotaLABEL";
             this.CuotaLABEL.Size = new System.Drawing.Size(53, 38);
             this.CuotaLABEL.TabIndex = 32;
@@ -232,7 +234,7 @@
             this.FechaPagoLABEL.AutoSize = true;
             this.FechaPagoLABEL.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FechaPagoLABEL.ForeColor = System.Drawing.Color.White;
-            this.FechaPagoLABEL.Location = new System.Drawing.Point(1142, 325);
+            this.FechaPagoLABEL.Location = new System.Drawing.Point(1142, 302);
             this.FechaPagoLABEL.Name = "FechaPagoLABEL";
             this.FechaPagoLABEL.Size = new System.Drawing.Size(53, 38);
             this.FechaPagoLABEL.TabIndex = 33;
@@ -255,7 +257,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(932, 275);
+            this.label8.Location = new System.Drawing.Point(932, 252);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 38);
             this.label8.TabIndex = 35;
@@ -266,7 +268,7 @@
             this.InteresLABEL.AutoSize = true;
             this.InteresLABEL.Font = new System.Drawing.Font("Franklin Gothic Heavy", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InteresLABEL.ForeColor = System.Drawing.Color.White;
-            this.InteresLABEL.Location = new System.Drawing.Point(962, 326);
+            this.InteresLABEL.Location = new System.Drawing.Point(962, 303);
             this.InteresLABEL.Name = "InteresLABEL";
             this.InteresLABEL.Size = new System.Drawing.Size(53, 38);
             this.InteresLABEL.TabIndex = 36;
@@ -284,12 +286,39 @@
             this.UltimoPagoBTN.UseVisualStyleBackColor = false;
             this.UltimoPagoBTN.Click += new System.EventHandler(this.UltimoPagoBTN_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
+            this.label9.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Firebrick;
+            this.label9.Location = new System.Drawing.Point(487, 598);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(243, 25);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "Desea no pagar este mes? \r\n";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NoPagarBTN
+            // 
+            this.NoPagarBTN.BackColor = System.Drawing.Color.White;
+            this.NoPagarBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoPagarBTN.Location = new System.Drawing.Point(745, 587);
+            this.NoPagarBTN.Name = "NoPagarBTN";
+            this.NoPagarBTN.Size = new System.Drawing.Size(124, 50);
+            this.NoPagarBTN.TabIndex = 39;
+            this.NoPagarBTN.Text = "No Pagar";
+            this.NoPagarBTN.UseVisualStyleBackColor = false;
+            this.NoPagarBTN.Click += new System.EventHandler(this.NoPagarBTN_Click);
+            // 
             // FormularioRealizarPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(1397, 655);
+            this.Controls.Add(this.NoPagarBTN);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.UltimoPagoBTN);
             this.Controls.Add(this.InteresLABEL);
             this.Controls.Add(this.label8);
@@ -343,5 +372,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label InteresLABEL;
         private System.Windows.Forms.Button UltimoPagoBTN;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button NoPagarBTN;
     }
 }

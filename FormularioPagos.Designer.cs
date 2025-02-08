@@ -33,7 +33,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ConsultarPagoBTN = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.GestionarPagoBTN = new System.Windows.Forms.Button();
             this.VolverBTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -65,7 +64,7 @@
             this.ConsultarPagoBTN.BackColor = System.Drawing.Color.White;
             this.ConsultarPagoBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConsultarPagoBTN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ConsultarPagoBTN.Location = new System.Drawing.Point(24, 36);
+            this.ConsultarPagoBTN.Location = new System.Drawing.Point(257, 36);
             this.ConsultarPagoBTN.Name = "ConsultarPagoBTN";
             this.ConsultarPagoBTN.Size = new System.Drawing.Size(408, 54);
             this.ConsultarPagoBTN.TabIndex = 4;
@@ -77,23 +76,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Turquoise;
             this.panel1.Controls.Add(this.ConsultarPagoBTN);
-            this.panel1.Controls.Add(this.GestionarPagoBTN);
             this.panel1.Location = new System.Drawing.Point(12, 350);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(947, 122);
             this.panel1.TabIndex = 14;
-            // 
-            // GestionarPagoBTN
-            // 
-            this.GestionarPagoBTN.BackColor = System.Drawing.Color.White;
-            this.GestionarPagoBTN.Font = new System.Drawing.Font("Franklin Gothic Medium", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GestionarPagoBTN.Location = new System.Drawing.Point(510, 36);
-            this.GestionarPagoBTN.Name = "GestionarPagoBTN";
-            this.GestionarPagoBTN.Size = new System.Drawing.Size(341, 54);
-            this.GestionarPagoBTN.TabIndex = 5;
-            this.GestionarPagoBTN.Text = "Gestionar pago";
-            this.GestionarPagoBTN.UseVisualStyleBackColor = false;
-            this.GestionarPagoBTN.Click += new System.EventHandler(this.GestionarPagoBTN_Click);
             // 
             // VolverBTN
             // 
@@ -132,7 +118,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button ConsultarPagoBTN;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button GestionarPagoBTN;
         private System.Windows.Forms.Button VolverBTN;
     }
 }
