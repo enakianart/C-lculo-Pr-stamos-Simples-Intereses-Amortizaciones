@@ -23,17 +23,24 @@ namespace Cálculo_Préstamos_Simples__Intereses__Amortizaciones
             formLogin.Show();
         }
 
-        private void GestionarPagoBTN_Click(object sender, EventArgs e)
-        {
-            FormularioGestionarPago formularioGestionarPago = new FormularioGestionarPago();
-            formularioGestionarPago.Show();
-        }
-
         private void ConsultarPagoBTN_Click(object sender, EventArgs e)
         {
-            FormularioRealizarPago formularioConsultarPago = new FormularioRealizarPago();
-            formularioConsultarPago.Show();
+            FormularioRealizarPago formularioRealizarPago = new FormularioRealizarPago();
+            formularioRealizarPago.Show();
             this.Close();
         }
+
+        //private void GestionarPagoBTN_Click(object sender, EventArgs e)
+        //{
+        //    FormularioGestionarPago formularioGestionarPago = new FormularioGestionarPago();
+        //    formularioGestionarPago.Show();
     }
-}
+
+        //private void ConsultarPagoBTN_Click(object sender, EventArgs e)
+        //{
+        //    FormularioRealizarPago formularioConsultarPago = new FormularioRealizarPago();
+        //    formularioConsultarPago.Show();
+        //    this.Close();
+        //}
+    }
+

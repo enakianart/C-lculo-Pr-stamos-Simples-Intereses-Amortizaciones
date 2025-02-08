@@ -39,6 +39,7 @@
             this.AgregarBTN = new System.Windows.Forms.Button();
             this.EliminarBTN = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,7 +48,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(186, 156);
+            this.dataGridView1.Location = new System.Drawing.Point(186, 195);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
@@ -152,12 +153,25 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(261, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(668, 25);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Buscar un cliente a partir de su nombre, agregar un cliente nuevo o eliminar.";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // FormularioGestionarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1273, 523);
+            this.ClientSize = new System.Drawing.Size(1273, 567);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.EliminarBTN);
             this.Controls.Add(this.AgregarBTN);
             this.Controls.Add(this.panel1);
@@ -189,5 +203,6 @@
         private System.Windows.Forms.Button AgregarBTN;
         private System.Windows.Forms.Button EliminarBTN;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
